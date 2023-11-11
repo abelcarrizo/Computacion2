@@ -28,7 +28,7 @@ def transform_text(lines):
             os.write(child_write, transformed_line.encode())
             exit()
 
-    for _ in range(len(lines)):
+    for x in range(len(lines)):
         os.wait()
 
     result_line = os.read(parent_read, 2024).decode()
