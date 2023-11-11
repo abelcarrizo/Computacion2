@@ -55,7 +55,7 @@ def servidor(ip, puerto, archivo_imagen):
     socket_servidor.close()
 
 def main():
-    parser = argparse.ArgumentParser(description='Tp2 - Procesa imágenes')
+    parser = argparse.ArgumentParser(description='Procesamiento de imágenes')
     parser.add_argument('-i', '--ip', required=True, help='Dirección de escucha')
     parser.add_argument('-p', '--puerto', type=int, required=True, help='Puerto de escucha')
     parser.add_argument('-f', '--archivo', required=True, help='Nombre del archivo de imagen a procesar')
